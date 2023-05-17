@@ -16,17 +16,17 @@ model User {
   name      String
   login     String
   avatarUrl String
-  Memory    Memories[]
+  memory    Memories[]
 }
 
 model Memories {
-  id     String @id @default(uuid())
-  userId String
+  id String @id @default(uuid())
 
   coverUrl  String
   content   String
   isPublic  Boolean  @default(false)
   createdAt DateTime @default(now())
 
-  user User @relation(fields: [userId], references: [id])
+  user   User   @relation(fields: [userId], references: [id])
+  userId String
 }
