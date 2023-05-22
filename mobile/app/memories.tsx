@@ -10,6 +10,7 @@ import dayjs from 'dayjs'
 import ptBr from 'dayjs/locale/pt-br'
 import { api } from '../src/lib/api'
 
+dayjs.locale(ptBr)
 interface Memory {
   coverUrl: string
   excerpt: string
