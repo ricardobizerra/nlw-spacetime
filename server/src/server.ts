@@ -28,8 +28,8 @@ app.register(jwt, {
 })
 
 app.register(authRoutes)
-app.register(memoriesRoutes)
 app.register(uploadRoutes)
+app.register(memoriesRoutes)
 
 app
   .listen({
