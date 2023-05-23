@@ -53,7 +53,7 @@ export default async function Home() {
             </p>
 
             <Link
-              href={`memories/${memory.id}}`}
+              href={`memories/${memory.id}`}
               className="flex items-center gap-2 text-sm text-gray-200 hover:text-gray-100"
             >
               Ler mais
